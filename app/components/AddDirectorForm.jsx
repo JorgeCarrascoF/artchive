@@ -25,7 +25,7 @@ const AddDirectorForm = () => {
     } else {
       setWrong(false);
       try {
-        const res = await fetch("/api/directors", {
+        const res = await fetch("${process.env.URL}/api/directors", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

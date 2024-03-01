@@ -17,7 +17,7 @@ const EditGameGenreForm = ({ id, gameGenreName, gameGenreDescription }) => {
     } else {
       setWrong(false);
       try {
-        const res = await fetch(`/api/gameGenres/${id}`, {
+        const res = await fetch(`${process.env.URL}/api/gameGenres/${id}`, {
           method: "PUT",
           headers: {
             "Content-Type": "application/json",

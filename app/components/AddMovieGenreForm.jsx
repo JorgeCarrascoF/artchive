@@ -17,7 +17,7 @@ const AddMovieGenreForm = () => {
     } else {
       setWrong(false);
       try {
-        const res = await fetch("/api/movieGenres", {
+        const res = await fetch("${process.env.URL}/api/movieGenres", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

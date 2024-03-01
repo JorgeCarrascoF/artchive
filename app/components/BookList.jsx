@@ -3,7 +3,7 @@ import DeleteBookButton from "./DeleteBookButton";
 
 export const getBooks = async () => {
   try {
-    const res = await fetch("/api/books", {
+    const res = await fetch("${process.env.URL}/api/books", {
       cache: "no-store",
     });
 

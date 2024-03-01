@@ -21,7 +21,7 @@ const AddDeveloperForm = () => {
     } else {
       setWrong(false);
       try {
-        const res = await fetch("/api/developers", {
+        const res = await fetch("${process.env.URL}/api/developers", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

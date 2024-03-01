@@ -28,7 +28,7 @@ const AddMovieForm = ({ directors, movieGenres }) => {
     } else {
       setWrong(false);
       try {
-        const res = await fetch("/api/movies", {
+        const res = await fetch("${process.env.URL}/api/movies", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

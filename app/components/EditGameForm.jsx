@@ -31,7 +31,7 @@ const EditGameForm = ({
     } else {
       setWrong(false);
       try {
-        const res = await fetch(`/api/games/${gameId}`, {
+        const res = await fetch(`${process.env.URL}/api/games/${gameId}`, {
           method: "PUT",
           headers: {
             "Content-Type": "application/json",

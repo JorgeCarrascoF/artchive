@@ -3,7 +3,7 @@ import DeleteMovieButton from "./DeleteMovieButton";
 
 export const getMovies = async () => {
   try {
-    const res = await fetch("/api/movies", {
+    const res = await fetch("${process.env.URL}/api/movies", {
       cache: "no-store",
     });
 

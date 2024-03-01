@@ -1,6 +1,6 @@
 export const getGenreByID = async (id) => {
   try {
-    const res = await fetch(`/api/bookGenre/${id}`, {
+    const res = await fetch(`${process.env.URL}/api/bookGenre/${id}`, {
       cache: "no-store",
     });
     if (!res.ok) {

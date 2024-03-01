@@ -3,7 +3,7 @@ import DeleteGameGenreButton from "./DeleteGameGenreButton";
 
 export const getGameGenres = async () => {
   try {
-    const res = await fetch("/api/gameGenres", {
+    const res = await fetch("${process.env.URL}/api/gameGenres", {
       cache: "no-store",
     });
 

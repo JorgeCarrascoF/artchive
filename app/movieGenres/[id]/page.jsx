@@ -1,6 +1,6 @@
 export const getMovieGenreByID = async (id) => {
   try {
-    const res = await fetch(`/api/movieGenres/${id}`, {
+    const res = await fetch(`${process.env.URL}/api/movieGenres/${id}`, {
       cache: "no-store",
     });
     if (!res.ok) {

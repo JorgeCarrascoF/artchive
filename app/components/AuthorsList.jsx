@@ -3,7 +3,7 @@ import DeleteAuthorButton from "./DeleteAuthorButton";
 
 export const getAuthors = async () => {
   try {
-    const res = await fetch("/api/authors", {
+    const res = await fetch("${process.env.URL}/api/authors", {
       cache: "no-store",
     });
     if (!res.ok) {

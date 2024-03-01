@@ -29,7 +29,7 @@ const EditAuthorForm = ({
       setWrong(false);
       try {
         const res = await fetch(
-          `/api/authors/${authorID}`,
+          `${process.env.URL}/api/authors/${authorID}`,
           {
             method: "PUT",
             headers: {

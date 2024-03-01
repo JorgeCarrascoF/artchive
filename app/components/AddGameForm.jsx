@@ -22,7 +22,7 @@ const AddGameForm = ({ developers, genres }) => {
     } else {
       setWrong(false);
       try {
-        const res = await fetch("/api/games", {
+        const res = await fetch("${process.env.URL}/api/games", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
