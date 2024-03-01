@@ -3,7 +3,7 @@ import DeleteGameButton from "./DeleteGameButton";
 
 export const getGames = async () => {
   try {
-    const res = await fetch("http://localhost:3000/api/games", {
+    const res = await fetch("http://https://artchive.vercel.app//api/games", {
       cache: "no-store",
     });
 

@@ -3,7 +3,7 @@ import DeleteMovieGenreButton from "./DeleteMovieGenreButton";
 
 export const getMovieGenres = async () => {
   try {
-    const res = await fetch("http://localhost:3000/api/movieGenres", {
+    const res = await fetch("http://https://artchive.vercel.app//api/movieGenres", {
       cache: "no-store",
     });
 

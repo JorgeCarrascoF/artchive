@@ -28,7 +28,7 @@ const AddMovieForm = ({ directors, movieGenres }) => {
     } else {
       setWrong(false);
       try {
-        const res = await fetch("http://localhost:3000/api/movies", {
+        const res = await fetch("http://https://artchive.vercel.app//api/movies", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

@@ -41,7 +41,7 @@ const EditBookForm = ({
     } else {
       setWrong(false);
       try {
-        const res = await fetch(`http://localhost:3000/api/books/${bookId}`, {
+        const res = await fetch(`http://https://artchive.vercel.app//api/books/${bookId}`, {
           method: "PUT",
           headers: {
             "Content-Type": "application/json",

@@ -42,7 +42,7 @@ const EditMovieForm = ({
     } else {
       setWrong(false);
       try {
-        const res = await fetch(`http://localhost:3000/api/movies/${movieId}`, {
+        const res = await fetch(`http://https://artchive.vercel.app//api/movies/${movieId}`, {
           method: "PUT",
           headers: {
             "Content-Type": "application/json",

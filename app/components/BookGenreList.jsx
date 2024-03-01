@@ -2,7 +2,7 @@ import Link from "next/link";
 import DeleteBookGenreButton from "./DeleteBookGenreButton";
 export const getBookGenres = async () => {
   try {
-    const res = await fetch("http://localhost:3000/api/bookGenre", {
+    const res = await fetch("http://https://artchive.vercel.app//api/bookGenre", {
       cache: "no-store",
     });
 

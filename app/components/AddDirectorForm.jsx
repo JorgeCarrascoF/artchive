@@ -25,7 +25,7 @@ const AddDirectorForm = () => {
     } else {
       setWrong(false);
       try {
-        const res = await fetch("http://localhost:3000/api/directors", {
+        const res = await fetch("http://https://artchive.vercel.app//api/directors", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

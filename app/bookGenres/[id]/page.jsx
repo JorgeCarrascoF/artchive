@@ -1,6 +1,6 @@
 export const getGenreByID = async (id) => {
   try {
-    const res = await fetch(`http://localhost:3000/api/bookGenre/${id}`, {
+    const res = await fetch(`http://https://artchive.vercel.app//api/bookGenre/${id}`, {
       cache: "no-store",
     });
     if (!res.ok) {

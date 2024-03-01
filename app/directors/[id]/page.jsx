@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export const getDirectorByID = async (id) => {
   try {
-    const res = await fetch(`http://localhost:3000/api/directors/${id}`, {
+    const res = await fetch(`http://https://artchive.vercel.app//api/directors/${id}`, {
       cache: "no-store",
     });
     if (!res.ok) {
@@ -17,7 +17,7 @@ export const getDirectorByID = async (id) => {
 const getDirectorMovies = async (id) => {
   try {
     const res = await fetch(
-      `http://localhost:3000/api/directors/${id}/movies`,
+      `http://https://artchive.vercel.app//api/directors/${id}/movies`,
       {
         cache: "no-store",
       }

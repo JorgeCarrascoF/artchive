@@ -31,7 +31,7 @@ const EditGameForm = ({
     } else {
       setWrong(false);
       try {
-        const res = await fetch(`http://localhost:3000/api/games/${gameId}`, {
+        const res = await fetch(`http://https://artchive.vercel.app//api/games/${gameId}`, {
           method: "PUT",
           headers: {
             "Content-Type": "application/json",

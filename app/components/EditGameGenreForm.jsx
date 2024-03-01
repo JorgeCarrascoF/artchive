@@ -17,7 +17,7 @@ const EditGameGenreForm = ({ id, gameGenreName, gameGenreDescription }) => {
     } else {
       setWrong(false);
       try {
-        const res = await fetch(`http://localhost:3000/api/gameGenres/${id}`, {
+        const res = await fetch(`http://https://artchive.vercel.app//api/gameGenres/${id}`, {
           method: "PUT",
           headers: {
             "Content-Type": "application/json",

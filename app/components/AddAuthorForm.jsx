@@ -25,7 +25,7 @@ const AddAuthorForm = () => {
     } else {
       setWrong(false);
       try {
-        const res = await fetch("http://localhost:3000/api/authors", {
+        const res = await fetch("http://https://artchive.vercel.app//api/authors", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

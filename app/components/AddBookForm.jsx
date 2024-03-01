@@ -24,7 +24,7 @@ const AddBookForm = ({ authors, genres }) => {
       setWrong(false);
       try {
         console.log({title, ISBN, description, author, book_genre, year})
-        const res = await fetch("http://localhost:3000/api/books", {
+        const res = await fetch("http://https://artchive.vercel.app//api/books", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export const getMovieByID = async (id) => {
   try {
-    const res = await fetch(`http://localhost:3000/api/movies/${id}`, {
+    const res = await fetch(`http://https://artchive.vercel.app//api/movies/${id}`, {
       cache: "no-store",
     });
 
