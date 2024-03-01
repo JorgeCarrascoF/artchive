@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export const getDirectorByID = async (id) => {
   try {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/directors/${id}`, {
+    const res = await fetch(`${process.env.URL}/api/directors/${id}`, {
       cache: "no-store",
     });
     if (!res.ok) {
@@ -17,7 +17,7 @@ export const getDirectorByID = async (id) => {
 const getDirectorMovies = async (id) => {
   try {
     const res = await fetch(
-      `${process.env.NEXT_PUBLIC_URL}/api/directors/${id}/movies`,
+      `${process.env.URL}/api/directors/${id}/movies`,
       {
         cache: "no-store",
       }

@@ -3,7 +3,7 @@ import DeleteDeveloperButton from "./DeleteDeveloperButton";
 
 export const getDevelopers = async () => {
   try {
-    const res = await fetch("${process.env.NEXT_PUBLIC_URL}/api/developers", {
+    const res = await fetch(`${process.env.URL}/api/developers`, {
       cache: "no-store",
     });
     if (!res.ok) {

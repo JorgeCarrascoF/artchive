@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export const getMovieByID = async (id) => {
   try {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/movies/${id}`, {
+    const res = await fetch(`${process.env.URL}/api/movies/${id}`, {
       cache: "no-store",
     });
 

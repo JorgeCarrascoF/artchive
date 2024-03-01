@@ -3,7 +3,7 @@ import DeleteGameButton from "./DeleteGameButton";
 
 export const getGames = async () => {
   try {
-    const res = await fetch("${process.env.NEXT_PUBLIC_URL}/api/games", {
+    const res = await fetch(`${process.env.URL}/api/games`, {
       cache: "no-store",
     });
 

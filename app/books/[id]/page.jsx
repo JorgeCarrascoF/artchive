@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export const getBookByID = async (id) => {
   try {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/books/${id}`, {
+    const res = await fetch(`${process.env.URL}/api/books/${id}`, {
       cache: "no-store",
     });
 

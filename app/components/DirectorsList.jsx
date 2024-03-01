@@ -3,7 +3,7 @@ import DeleteDirectorButton from "./DeleteDirectorButton";
 
 export const getDirectors = async () => {
   try {
-    const res = await fetch("${process.env.NEXT_PUBLIC_URL}/api/directors", {
+    const res = await fetch(`${process.env.URL}/api/directors`, {
       cache: "no-store",
     });
     if (!res.ok) {
