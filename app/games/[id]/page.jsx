@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export const getGameByID = async (id) => {
   try {
-    const res = await fetch(`${process.env.URL}/api/games/${id}`, {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/games/${id}`, {
       cache: "no-store",
     });
 

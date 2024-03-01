@@ -42,7 +42,7 @@ const EditMovieForm = ({
     } else {
       setWrong(false);
       try {
-        const res = await fetch(`${process.env.URL}/api/movies/${movieId}`, {
+        const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/movies/${movieId}`, {
           method: "PUT",
           headers: {
             "Content-Type": "application/json",

@@ -23,7 +23,7 @@ const EditDeveloperForm = ({
       setWrong(false);
       try {
         const res = await fetch(
-          `${process.env.URL}/api/developers/${developerId}`,
+          `${process.env.NEXT_PUBLIC_URL}/api/developers/${developerId}`,
           {
             method: "PUT",
             headers: {

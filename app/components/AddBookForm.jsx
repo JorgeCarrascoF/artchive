@@ -24,7 +24,7 @@ const AddBookForm = ({ authors, genres }) => {
       setWrong(false);
       try {
         console.log({title, ISBN, description, author, book_genre, year})
-        const res = await fetch("${process.env.URL}/api/books", {
+        const res = await fetch("${process.env.NEXT_PUBLIC_URL}/api/books", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

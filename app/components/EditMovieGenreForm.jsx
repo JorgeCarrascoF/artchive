@@ -17,7 +17,7 @@ const EditMovieGenreForm = ({id, movieGenreName, movieGenreDescription}) => {
     } else {
       setWrong(false);
       try {
-        const res = await fetch(`${process.env.URL}/api/movieGenres/${id}`, {
+        const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/movieGenres/${id}`, {
           method: "PUT",
           headers: {
             "Content-Type": "application/json",

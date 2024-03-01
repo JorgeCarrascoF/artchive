@@ -17,7 +17,7 @@ const AddBookGenreForm = () => {
     } else {
       setWrong(false);
       try {
-        const res = await fetch("${process.env.URL}/api/bookGenre", {
+        const res = await fetch("${process.env.NEXT_PUBLIC_URL}/api/bookGenre", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

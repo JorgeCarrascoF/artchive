@@ -6,7 +6,7 @@ const DeleteGameGenreButton = ({ id }) => {
     const [deleting, setDeleting] = useState(false);
     const router = useRouter();
   const removeGameGenre = async () => {
-      const res = await fetch(`${process.env.URL}/api/gameGenres?id=${id}`, {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/gameGenres?id=${id}`, {
         method: "DELETE",
       });
 

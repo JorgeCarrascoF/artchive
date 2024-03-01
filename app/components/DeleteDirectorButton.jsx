@@ -6,7 +6,7 @@ const DeleteDirectorButton = ({ id }) => {
   const [deleting, setDeleting] = useState(false);
   const router = useRouter();
   const removeDirector = async () => {
-    const res = await fetch(`${process.env.URL}/api/directors?id=${id}`, {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/directors?id=${id}`, {
       method: "DELETE",
     });
     if (res.ok) {

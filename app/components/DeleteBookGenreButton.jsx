@@ -6,7 +6,7 @@ const DeleteBookGenreButton = ({ id }) => {
   const [deleting, setDeleting] = useState(false);
   const router = useRouter();
   const removeBookGenre = async () => {
-    const res = await fetch(`${process.env.URL}/api/bookGenre?id=${id}`, {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/bookGenre?id=${id}`, {
       method: "DELETE",
     });
 

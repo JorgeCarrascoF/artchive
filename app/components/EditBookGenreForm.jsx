@@ -17,7 +17,7 @@ const EditBookGenreForm = ({ id, bookGenreName, bookGenreDescription }) => {
     } else {
       setWrong(false);
       try {
-        const res = await fetch(`${process.env.URL}/api/bookGenre/${id}`, {
+        const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/bookGenre/${id}`, {
           method: "PUT",
           headers: {
             "Content-Type": "application/json",

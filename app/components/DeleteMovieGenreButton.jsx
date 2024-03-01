@@ -6,7 +6,7 @@ const DeleteMovieGenreButton = ({ id }) => {
   const [deleting, setDeleting] = useState(false);
   const router = useRouter();
   const removeMovieGenre = async () => {
-    const res = await fetch(`${process.env.URL}/api/movieGenres?id=${id}`, {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/movieGenres?id=${id}`, {
       method: "DELETE",
     });
 
