@@ -25,7 +25,7 @@ const AddAuthorForm = () => {
     } else {
       setWrong(false);
       try {
-        const res = await fetch(`${process.env.URL}/api/authors`, {
+        const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/authors`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
