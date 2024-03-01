@@ -21,7 +21,7 @@ const AddDeveloperForm = () => {
     } else {
       setWrong(false);
       try {
-        const res = await fetch("//artchive.vercel.app//api/developers", {
+        const res = await fetch("/api/developers", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

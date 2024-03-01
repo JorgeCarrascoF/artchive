@@ -6,7 +6,7 @@ const DeleteDeveloperButton = ({ id }) => {
   const [deleting, setDeleting] = useState(false);
   const router = useRouter();
   const removeDeveloper = async () => {
-    const res = await fetch(`//artchive.vercel.app//api/developers?id=${id}`, {
+    const res = await fetch(`/api/developers?id=${id}`, {
       method: "DELETE",
     });
     if (res.ok) {

@@ -3,7 +3,7 @@ import DeleteGameGenreButton from "./DeleteGameGenreButton";
 
 export const getGameGenres = async () => {
   try {
-    const res = await fetch("//artchive.vercel.app//api/gameGenres", {
+    const res = await fetch("/api/gameGenres", {
       cache: "no-store",
     });
 

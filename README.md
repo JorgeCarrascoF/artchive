@@ -22,7 +22,7 @@ pnpm dev
 bun dev
 ```
 
-Open [//artchive.vercel.app/](//artchive.vercel.app/) with your browser to see the result.
+Open []() with your browser to see the result.
 
 You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 

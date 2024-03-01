@@ -3,7 +3,7 @@ import DeleteDeveloperButton from "./DeleteDeveloperButton";
 
 export const getDevelopers = async () => {
   try {
-    const res = await fetch("//artchive.vercel.app//api/developers", {
+    const res = await fetch("/api/developers", {
       cache: "no-store",
     });
     if (!res.ok) {

@@ -1,6 +1,6 @@
 export const getMovieGenreByID = async (id) => {
   try {
-    const res = await fetch(`//artchive.vercel.app//api/movieGenres/${id}`, {
+    const res = await fetch(`/api/movieGenres/${id}`, {
       cache: "no-store",
     });
     if (!res.ok) {

@@ -6,7 +6,7 @@ const DeleteMovieButton = ({ id }) => {
   const [deleting, setDeleting] = useState(false)
   const router = useRouter();
   const removeMovie = async () => {
-    const res = await fetch(`//artchive.vercel.app//api/movies?id=${id}`, {
+    const res = await fetch(`/api/movies?id=${id}`, {
       method: "DELETE",
     });
 

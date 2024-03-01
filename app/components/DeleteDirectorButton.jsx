@@ -6,7 +6,7 @@ const DeleteDirectorButton = ({ id }) => {
   const [deleting, setDeleting] = useState(false);
   const router = useRouter();
   const removeDirector = async () => {
-    const res = await fetch(`//artchive.vercel.app//api/directors?id=${id}`, {
+    const res = await fetch(`/api/directors?id=${id}`, {
       method: "DELETE",
     });
     if (res.ok) {

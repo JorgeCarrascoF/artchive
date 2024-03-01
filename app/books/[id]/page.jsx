@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export const getBookByID = async (id) => {
   try {
-    const res = await fetch(`//artchive.vercel.app//api/books/${id}`, {
+    const res = await fetch(`/api/books/${id}`, {
       cache: "no-store",
     });
 

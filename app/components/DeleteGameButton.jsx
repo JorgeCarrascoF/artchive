@@ -6,7 +6,7 @@ const DeleteGameButton = ({ id }) => {
   const [deleting, setDeleting] = useState(false);
   const router = useRouter();
   const removeGame = async () => {
-    const res = await fetch(`//artchive.vercel.app//api/games?id=${id}`, {
+    const res = await fetch(`/api/games?id=${id}`, {
       method: "DELETE",
     });
 

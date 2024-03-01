@@ -29,7 +29,7 @@ const EditAuthorForm = ({
       setWrong(false);
       try {
         const res = await fetch(
-          `//artchive.vercel.app//api/authors/${authorID}`,
+          `/api/authors/${authorID}`,
           {
             method: "PUT",
             headers: {

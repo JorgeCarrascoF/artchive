@@ -3,7 +3,7 @@ import DeleteDirectorButton from "./DeleteDirectorButton";
 
 export const getDirectors = async () => {
   try {
-    const res = await fetch("//artchive.vercel.app//api/directors", {
+    const res = await fetch("/api/directors", {
       cache: "no-store",
     });
     if (!res.ok) {

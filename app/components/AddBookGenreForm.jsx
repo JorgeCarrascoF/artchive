@@ -17,7 +17,7 @@ const AddBookGenreForm = () => {
     } else {
       setWrong(false);
       try {
-        const res = await fetch("//artchive.vercel.app//api/bookGenre", {
+        const res = await fetch("/api/bookGenre", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

@@ -28,7 +28,7 @@ const EditDirectorForm = ({
     } else {
       setWrong(false);
       try {
-        const res = await fetch(`//artchive.vercel.app//api/directors/${directorID}`, {
+        const res = await fetch(`/api/directors/${directorID}`, {
           method: "PUT",
           headers: {
             "Content-Type": "application/json",

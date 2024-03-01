@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export const getDeveloperByID = async (id) => {
   try {
-    const res = await fetch(`//artchive.vercel.app//api/developers/${id}`, {
+    const res = await fetch(`/api/developers/${id}`, {
       cache: "no-store",
     });
 
@@ -19,7 +19,7 @@ export const getDeveloperByID = async (id) => {
 const getDeveloperGames = async (id) => {
   try {
     const res = await fetch(
-      `//artchive.vercel.app//api/developers/${id}/games`,
+      `/api/developers/${id}/games`,
       {
         cache: "no-store",
       }

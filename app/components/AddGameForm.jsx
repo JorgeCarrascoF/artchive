@@ -22,7 +22,7 @@ const AddGameForm = ({ developers, genres }) => {
     } else {
       setWrong(false);
       try {
-        const res = await fetch("//artchive.vercel.app//api/games", {
+        const res = await fetch("/api/games", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

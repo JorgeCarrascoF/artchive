@@ -6,7 +6,7 @@ const DeleteAuthorButton = ({ id }) => {
   const [deleting, setDeleting] = useState(false);
   const router = useRouter();
   const removeAuthor = async () => {
-    const res = await fetch(`//artchive.vercel.app//api/authors?id=${id}`, {
+    const res = await fetch(`/api/authors?id=${id}`, {
       method: "DELETE",
     });
     if (res.ok) {
