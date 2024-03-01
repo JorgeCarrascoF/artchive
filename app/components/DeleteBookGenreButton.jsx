@@ -6,7 +6,7 @@ const DeleteBookGenreButton = ({ id }) => {
   const [deleting, setDeleting] = useState(false);
   const router = useRouter();
   const removeBookGenre = async () => {
-    const res = await fetch(`http://https://artchive.vercel.app//api/bookGenre?id=${id}`, {
+    const res = await fetch(`//artchive.vercel.app//api/bookGenre?id=${id}`, {
       method: "DELETE",
     });
 

@@ -3,7 +3,7 @@ import DeleteAuthorButton from "./DeleteAuthorButton";
 
 export const getAuthors = async () => {
   try {
-    const res = await fetch("http://https://artchive.vercel.app//api/authors", {
+    const res = await fetch("//artchive.vercel.app//api/authors", {
       cache: "no-store",
     });
     if (!res.ok) {

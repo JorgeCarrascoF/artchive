@@ -17,7 +17,7 @@ const EditMovieGenreForm = ({id, movieGenreName, movieGenreDescription}) => {
     } else {
       setWrong(false);
       try {
-        const res = await fetch(`http://https://artchive.vercel.app//api/movieGenres/${id}`, {
+        const res = await fetch(`//artchive.vercel.app//api/movieGenres/${id}`, {
           method: "PUT",
           headers: {
             "Content-Type": "application/json",

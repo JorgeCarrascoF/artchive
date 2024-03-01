@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export const getGameByID = async (id) => {
   try {
-    const res = await fetch(`http://https://artchive.vercel.app//api/games/${id}`, {
+    const res = await fetch(`//artchive.vercel.app//api/games/${id}`, {
       cache: "no-store",
     });
 

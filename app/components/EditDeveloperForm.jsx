@@ -23,7 +23,7 @@ const EditDeveloperForm = ({
       setWrong(false);
       try {
         const res = await fetch(
-          `http://https://artchive.vercel.app//api/developers/${developerId}`,
+          `//artchive.vercel.app//api/developers/${developerId}`,
           {
             method: "PUT",
             headers: {

@@ -17,7 +17,7 @@ const EditBookGenreForm = ({ id, bookGenreName, bookGenreDescription }) => {
     } else {
       setWrong(false);
       try {
-        const res = await fetch(`http://https://artchive.vercel.app//api/bookGenre/${id}`, {
+        const res = await fetch(`//artchive.vercel.app//api/bookGenre/${id}`, {
           method: "PUT",
           headers: {
             "Content-Type": "application/json",
